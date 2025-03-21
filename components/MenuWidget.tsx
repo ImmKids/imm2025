@@ -5,7 +5,7 @@ import { ChevronRight } from 'lucide-react';
 const MenuWidget = () => {
   return (
     <div className="w-[300px] border-4 border-[#C3BCBC] rounded-lg overflow-hidden gap-0 bg-white">
-      <h2 className="bg-[#D9D9D9] text-gray-800 py-3 px-4 m-0 text-lg font-bold font-jaro flex justify-between items-center text-center">
+      <h2 className="bg-[#D9D9D9] text-gray-800 py-3 px-4 m-0 text-[30px] font-jaro flex justify-between items-center text-center">
         IMM2025
         <svg width="39" height="18.5" viewBox="0 0 78 37" fill="none" xmlns="http://www.w3.org/2000/svg" className="ml-2">
           <path d="M69.2845 26.4056C69.2845 26.062 69.4163 25.7325 69.651 25.4896C69.8857 25.2466 70.2039 25.1101 70.5358 25.1101H75.7197V13.2125H70.5358C70.2039 13.2125 69.8857 13.076 69.651 12.833C69.4163 12.5901 69.2845 12.2606 69.2845 11.917M69.2845 11.917V2.64392H2.58191V35.0478H69.2845V26.4056" fill="#D0CFCE"/>
