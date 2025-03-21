@@ -35,7 +35,7 @@ const jaro = Jaro({
 })
 
 export const metadata: Metadata = {
-  title: "IMM Multi Universe",
+  title: "IMM Grad Show 2025",
   description: "IMM Grad Show 2025",
 };
 
