@@ -1,6 +1,11 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import { Jersey_10 } from 'next/font/google'
+import Header from '@/components/Header'
+import { Roboto } from 'next/font/google'
+import Footer from '@/components/Footer'
+import { Jaro } from 'next/font/google'
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -12,22 +17,47 @@ const geistMono = Geist_Mono({
   subsets: ["latin"],
 });
 
+const jersey = Jersey_10({ 
+  subsets: ['latin'],
+  weight: '400',
+  variable: '--font-jersey',
+})
+
+const roboto = Roboto({
+  weight: ['400', '500', '700'],
+  subsets: ['latin'],
+  display: 'swap',
+  variable: '--font-roboto',
+})
+
+const jaro = Jaro({
+  subsets: ['latin'],
+  weight: '400',
+  display: 'swap',
+  variable: '--font-jaro',
+})
+
 export const metadata: Metadata = {
-  title: "IMM 2025 Grad Show | Sheridan College",
-  description: "Interactive Media Management Graduate Show 2025 at Sheridan College",
+  title: "IMM Multi Universe",
+  description: "IMM Grad Show 2025",
+  icons: {
+    icon: '/favicon.ico',
+  },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
-    <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
-        {children}
+    <html lang="en" className={`${geistSans.variable} ${geistMono.variable} antialiased ${jersey.variable} ${roboto.variable} ${jaro.variable}`}>
+      <body className="flex flex-col min-h-screen">
+        <Header />
+        <main className="pt-header flex-grow">
+          {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );
