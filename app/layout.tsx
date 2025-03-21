@@ -32,7 +32,6 @@ const roboto = Roboto({
 
 const jaro = Jaro({
   subsets: ['latin'],
-  weight: '400',
   display: 'swap',
   variable: '--font-jaro',
 })
@@ -40,9 +39,6 @@ const jaro = Jaro({
 export const metadata: Metadata = {
   title: "IMM Multi Universe",
   description: "IMM Grad Show 2025",
-  icons: {
-    icon: '/favicon.ico',
-  },
 };
 
 export default function RootLayout({

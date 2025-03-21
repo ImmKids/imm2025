@@ -10,7 +10,7 @@ const Header = () => {
           {/* Logo/Brand */}
           <div className="flex-shrink-0 flex items-center gap-3 pl-4">
             <div className="w-8 h-8 rounded-full bg-green-500"></div>
-            <h1 className="font-jaro text-4xl text-black">IMM 2025</h1>
+            <h1 className="font-jersey text-4xl text-black">IMM 2025</h1>
           </div>
           
           {/* Navigation */}

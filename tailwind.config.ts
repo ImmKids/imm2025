@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-import defaultTheme from "tailwindcss/defaultTheme";
+import { fontFamily } from "tailwindcss/defaultTheme";
 import plugin from "tailwindcss/plugin";
 
 export default {
@@ -22,7 +22,7 @@ export default {
       fontFamily: {
         jersey: ['var(--font-jersey)'],
         roboto: ['var(--font-roboto)', 'sans-serif'],
-        jaro: ["var(--font-jaro)", ...defaultTheme.fontFamily.sans],
+        jaro: ["var(--font-jaro)", ...fontFamily.sans],
       },
       spacing: {
         'header': 'var(--header-height)',

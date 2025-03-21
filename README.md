@@ -1,19 +1,12 @@
-# Interactive Media Management 2025 Grad Show Website
+# IMM 2025 Website
 
-This is the codebase for the Interactive Media Management 2025 Graduate Show website, built with [Next.js](https://nextjs.org).
+This is the website for the Interactive Media Management(IMM) Class of 2025 at Sheridan Colege.
 
 ## Getting Started
 
-First, run the development server:```bash
+```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm run build
 ```
 
-## Design
-
-The design for this website can be found in [Figma](https://www.figma.com/design/2Q1zs5mIKDbHhzN9rYET3W/IMM-Grad-Show-25?node-id=0-1&t=Ymo8xLmL5cu9InHi-1).
