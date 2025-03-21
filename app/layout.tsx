@@ -49,11 +49,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={`${geistSans.variable} ${geistMono.variable} antialiased ${jersey.variable} ${roboto.variable} ${jaro.variable}`}>
       <body className="flex flex-col min-h-screen">
-        <Header />
-        <main className="pt-header flex-grow">
+        {/* <Header /> */}
+        <main className="flex-grow">
           {children}
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
