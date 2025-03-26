@@ -1,7 +1,6 @@
 import { ChevronLeft, ChevronRight, Play, Linkedin } from 'lucide-react';
 import Image from 'next/image';
-import { PLACEHOLDER_WORK } from '@/lib/api';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 
 interface ProfileCardProps {
   name: string;
