@@ -2,7 +2,7 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['rickandmortyapi.com']
+    domains: ['rickandmortyapi.com', 'picsum.photos']
   }
 };
 
