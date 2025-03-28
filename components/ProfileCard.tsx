@@ -1,4 +1,4 @@
-import { ChevronLeft, ChevronRight, Play, Linkedin } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Play, Linkedin, ArrowLeft } from 'lucide-react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
@@ -12,6 +12,7 @@ interface ProfileCardProps {
   onPrevious?: () => void;
   onPlay?: () => void;
   onNext?: () => void;
+  onBack?: () => void;
 }
 
 const ProfileCard: React.FC<ProfileCardProps> = ({
@@ -24,6 +25,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
   onPrevious,
   onPlay,
   onNext,
+  onBack,
 }) => {
   return (
     <motion.div 
@@ -126,8 +128,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
         initial={{ y: 20, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ delay: 0.5 }}
-        className="flex justify-center items-center gap-8"
-      >
+        className="flex justify-center items-center gap-8">
         <motion.button 
           whileHover={{ scale: 1.1 }}
           whileTap={{ scale: 0.9 }}

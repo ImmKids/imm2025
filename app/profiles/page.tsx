@@ -7,6 +7,7 @@ import { getImmProfiles } from '@/lib/api';
 import { ImmProfile } from '@/lib/types';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
+import { ChevronLeft, ChevronRight, Play, Linkedin, ArrowLeft } from 'lucide-react';
 
 function ProfileContent() {
   const profiles = useMemo(() => getImmProfiles(), []);
@@ -48,6 +49,10 @@ function ProfileContent() {
     setIsPopupOpen(false);
   }, []);
 
+  const handleBack = useCallback(() => {
+    router.push('/');
+  }, [router]);
+
   const currentProfile: ImmProfile = profiles[currentProfileIndex];
 
   if (isLoading) {
@@ -69,17 +74,31 @@ function ProfileContent() {
 
       {/* Content */}
       <div className="relative z-10 flex min-h-screen items-center justify-center">
-        <ProfileCard
-          name={currentProfile.name}
-          title={currentProfile.title}
-          description={currentProfile.description}
-          profileImage={currentProfile.profileImage}
-          topImage={currentProfile.topImage}
-          linkedinUrl={currentProfile.linkedinUrl}
-          onPrevious={handlePrevious}
-          onPlay={handlePlay}
-          onNext={handleNext}
-        />
+        <div className="relative">
+          <ProfileCard
+            name={currentProfile.name}
+            title={currentProfile.title}
+            description={currentProfile.description}
+            profileImage={currentProfile.profileImage}
+            topImage={currentProfile.topImage}
+            linkedinUrl={currentProfile.linkedinUrl}
+            onPrevious={handlePrevious}
+            onPlay={handlePlay}
+            onNext={handleNext}
+          />
+          
+          {/* Back button positioned below the card */}
+          <motion.button 
+            initial={{ opacity: 0, y: 10 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.6 }}
+            onClick={() => router.push('/')}
+            className="absolute -bottom-16 left-0 px-6 py-3 bg-white border border-gray-300 rounded-lg hover:bg-gray-50 text-gray-700 flex items-center gap-2 shadow-md"
+          >
+            <ArrowLeft className="w-5 h-5" />
+            <span>Back to Home</span>
+          </motion.button>
+        </div>
 
         {/* Profile Popup */}
         <AnimatePresence>

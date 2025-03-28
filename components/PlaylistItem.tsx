@@ -41,8 +41,8 @@ export default function PlaylistItem({ profile }: PlaylistItemProps) {
       ref={itemRef}
       onClick={handleClick}
       onMouseLeave={() => setShowMenu(false)}
-      className="flex items-center gap-4 p-3 cursor-pointer border-b border-black hover:bg-blue-500 hover:text-white relative">
-      <div className="w-12 h-12 relative">
+      className="flex items-center gap-4 p-6 cursor-pointer border-b border-black hover:bg-blue-500 hover:text-white relative">
+      <div className="w-16 h-16 relative">
         <Image
           src={profile.profileImage}
           alt={profile.name}
