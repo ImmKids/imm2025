@@ -15,10 +15,10 @@ export default function Home() {
       {/* Center Column */}
       <div className="flex-[3] max-w-[800px] flex flex-col gap-8 py-8">
         {/* Hero Image */}
-        <div className="w-full aspect-video bg-gray-200 rounded-lg relative overflow-hidden">
+        <div className="w-full aspect-[4/3] bg-gray-200 rounded-lg relative overflow-hidden">
           <Image 
-            src={PLACEHOLDER_WORK}
-            alt="IMM 2025 Hero"
+            src="/coverphoto.jpeg"
+            alt="IMM 2025 Cover"
             fill
             className="object-cover"
           />

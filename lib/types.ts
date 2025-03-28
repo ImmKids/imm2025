@@ -6,4 +6,6 @@ export interface ImmProfile {
   profileImage: string;
   topImage: string;
   linkedinUrl: string;
+  instagramUrl: string;
+  githubUrl: string;
 } 
