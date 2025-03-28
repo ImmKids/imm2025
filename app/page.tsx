@@ -1,16 +1,41 @@
 "use client";
 
-import MenuWidget from '@/components/MenuWidget';
+import { getImmProfiles, PLACEHOLDER_WORK } from '@/lib/api';
+import Playlist from '../components/Playlist';
+import Image from 'next/image';
 
 export default function Home() {
+  const profiles = getImmProfiles();
+
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen bg-imm-about">
-      <MenuWidget />
-      <div className="flex flex-col w-full max-w-[800px] py-20 items-center sm:items-end justify-center sm:justify-end text-[#414759] text-2xl font-bold font-roboto px-4 sm:px-0">
-        <div className="w-full text-center sm:text-right">
-          Grad Show Coming Soon
+    <div className="flex min-h-screen bg-[#E4F5FF]">
+      {/* Left Column */}
+      <div className="flex-1"></div>
+
+      {/* Center Column */}
+      <div className="flex-[3] max-w-[800px] flex flex-col gap-8 py-8">
+        {/* Hero Image */}
+        <div className="w-full aspect-video bg-gray-200 rounded-lg relative overflow-hidden">
+          <Image 
+            src={PLACEHOLDER_WORK}
+            alt="IMM 2025 Hero"
+            fill
+            className="object-cover"
+          />
         </div>
+
+        {/* Title */}
+        <div className="text-center">
+          <div className="text-5xl font-bold text-[#414759] text-left">Interactive Media Management</div>
+          <div className="text-5xl font-bold text-[#414759] mt-2 text-left">2025</div>
+        </div>
+
+        {/* Playlist Component */}
+        <Playlist profiles={profiles} />
       </div>
+
+      {/* Right Column */}
+      <div className="flex-1"></div>
     </div>
   );
 }
