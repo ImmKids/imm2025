@@ -2,37 +2,57 @@
 
 import Image from 'next/image';
 import ProfileCard from '@/components/ProfileCard';
-import { useState } from 'react';
+import { useState, useEffect, useMemo, useCallback } from 'react';
 import { getImmProfiles } from '@/lib/api';
 import { ImmProfile } from '@/lib/types';
+import { useSearchParams, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 
 export default function Prototype() {
-  const profiles = getImmProfiles();
+  const profiles = useMemo(() => getImmProfiles(), []);
+  const searchParams = useSearchParams();
+  const router = useRouter();
   const [currentProfileIndex, setCurrentProfileIndex] = useState(0);
+  const [isLoading, setIsLoading] = useState(true);
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
-  const handlePrevious = () => {
-    setCurrentProfileIndex((prevIndex) => 
-      prevIndex === 0 ? profiles.length - 1 : prevIndex - 1
-    );
-  };
+  // Handle URL query parameter
+  useEffect(() => {
+    const id = searchParams.get('id');
+    if (id) {
+      const index = profiles.findIndex(profile => profile.id === parseInt(id));
+      if (index !== -1) {
+        setCurrentProfileIndex(index);
+      }
+    }
+    setIsLoading(false);
+  }, [searchParams, profiles]);
 
-  const handleNext = () => {
-    setCurrentProfileIndex((prevIndex) => 
-      prevIndex === profiles.length - 1 ? 0 : prevIndex + 1
-    );
-  };
+  const handlePrevious = useCallback(() => {
+    const newIndex = currentProfileIndex === 0 ? profiles.length - 1 : currentProfileIndex - 1;
+    setCurrentProfileIndex(newIndex);
+    router.push(`/profiles?id=${profiles[newIndex].id}`);
+  }, [currentProfileIndex, profiles, router]);
 
-  const handlePlay = () => {
+  const handleNext = useCallback(() => {
+    const newIndex = currentProfileIndex === profiles.length - 1 ? 0 : currentProfileIndex + 1;
+    setCurrentProfileIndex(newIndex);
+    router.push(`/profiles?id=${profiles[newIndex].id}`);
+  }, [currentProfileIndex, profiles, router]);
+
+  const handlePlay = useCallback(() => {
     setIsPopupOpen(true);
-  };
+  }, []);
 
-  const handleClosePopup = () => {
+  const handleClosePopup = useCallback(() => {
     setIsPopupOpen(false);
-  };
+  }, []);
 
   const currentProfile: ImmProfile = profiles[currentProfileIndex];
+
+  if (isLoading) {
+    return null;
+  }
 
   return (
     <div className="relative min-h-screen w-full">

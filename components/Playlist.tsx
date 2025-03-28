@@ -2,18 +2,25 @@ import { ImmProfile } from '@/lib/types';
 import { Shuffle, Play } from 'lucide-react';
 import PlaylistItem from './PlaylistItem';
 import { useState } from 'react';
+import { useRouter } from 'next/navigation';
 
 interface PlaylistProps {
   profiles: ImmProfile[];
 }
 
 export default function Playlist({ profiles: initialProfiles }: PlaylistProps) {
-  const [selectedId, setSelectedId] = useState<number | null>(null);
   const [profiles, setProfiles] = useState(initialProfiles);
+  const router = useRouter();
 
   const handleShuffle = () => {
     const shuffled = [...profiles].sort(() => Math.random() - 0.5);
     setProfiles(shuffled);
+  };
+
+  const handlePlay = () => {
+    if (profiles.length > 0) {
+      router.push(`/profiles?id=${profiles[0].id}`);
+    }
   };
 
   return (
@@ -29,7 +36,9 @@ export default function Playlist({ profiles: initialProfiles }: PlaylistProps) {
             className="p-2 hover:bg-gray-100 rounded-full text-black">
             <Shuffle className="w-6 h-6" />
           </button>
-          <button className="p-2 bg-blue-500 hover:bg-blue-600 rounded-full text-white">
+          <button 
+            onClick={handlePlay}
+            className="p-2 bg-blue-500 hover:bg-blue-600 rounded-full text-white">
             <Play className="w-6 h-6" />
           </button>
         </div>
@@ -41,8 +50,6 @@ export default function Playlist({ profiles: initialProfiles }: PlaylistProps) {
           <PlaylistItem 
             key={profile.id} 
             profile={profile} 
-            isSelected={selectedId === profile.id}
-            onClick={() => setSelectedId(profile.id)}
           />
         ))}
       </div>

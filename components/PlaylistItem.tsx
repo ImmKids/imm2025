@@ -1,18 +1,23 @@
 import { ImmProfile } from '@/lib/types';
 import Image from 'next/image';
+import { useRouter } from 'next/navigation';
 
 interface PlaylistItemProps {
   profile: ImmProfile;
-  isSelected?: boolean;
   onClick?: () => void;
 }
 
-export default function PlaylistItem({ profile, isSelected = false, onClick }: PlaylistItemProps) {
+export default function PlaylistItem({ profile, onClick }: PlaylistItemProps) {
+  const router = useRouter();
+
+  const handleClick = () => {
+    router.push(`/profiles?id=${profile.id}`);
+  };
+
   return (
     <div 
-      onClick={onClick}
-      className={`flex items-center gap-4 p-3 cursor-pointer border-b border-black
-        ${isSelected ? 'bg-blue-500 text-white' : 'hover:bg-gray-100'}`}>
+      onClick={handleClick}
+      className="flex items-center gap-4 p-3 cursor-pointer border-b border-black hover:bg-blue-500 hover:text-white">
       <div className="w-12 h-12 relative">
         <Image
           src={profile.profileImage}
@@ -22,8 +27,8 @@ export default function PlaylistItem({ profile, isSelected = false, onClick }: P
         />
       </div>
       <div className="flex-1">
-        <div className={`text-sm ${isSelected ? 'text-white' : 'text-gray-600'}`}>{profile.title}</div>
-        <div className={`text-sm ${isSelected ? 'text-white' : 'text-gray-600'}`}>{profile.name}</div>
+        <div className="text-sm text-gray-600 group-hover:text-white">{profile.title}</div>
+        <div className="text-sm text-gray-600 group-hover:text-white">{profile.name}</div>
       </div>
     </div>
   );
