@@ -1,6 +1,6 @@
 "use client";
 
-import { getImmProfiles, PLACEHOLDER_WORK } from '@/lib/api';
+import { getImmProfiles } from '@/lib/api';
 import Playlist from '../components/Playlist';
 import Image from 'next/image';
 
