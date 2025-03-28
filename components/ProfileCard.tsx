@@ -1,4 +1,4 @@
-import { ChevronLeft, ChevronRight, Play, Linkedin, ArrowLeft } from 'lucide-react';
+import { ChevronLeft, ChevronRight, Play, Linkedin } from 'lucide-react';
 import Image from 'next/image';
 import { motion } from 'framer-motion';
 
@@ -12,7 +12,6 @@ interface ProfileCardProps {
   onPrevious?: () => void;
   onPlay?: () => void;
   onNext?: () => void;
-  onBack?: () => void;
 }
 
 const ProfileCard: React.FC<ProfileCardProps> = ({
@@ -25,7 +24,6 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
   onPrevious,
   onPlay,
   onNext,
-  onBack,
 }) => {
   return (
     <motion.div 

@@ -7,7 +7,7 @@ import { getImmProfiles } from '@/lib/api';
 import { ImmProfile } from '@/lib/types';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import { ChevronLeft, ChevronRight, Play, Linkedin, ArrowLeft } from 'lucide-react';
+import {  ArrowLeft } from 'lucide-react'; //ChevronLeft, ChevronRight, Play, Linkedin,
 
 function ProfileContent() {
   const profiles = useMemo(() => getImmProfiles(), []);
@@ -48,10 +48,6 @@ function ProfileContent() {
   const handleClosePopup = useCallback(() => {
     setIsPopupOpen(false);
   }, []);
-
-  const handleBack = useCallback(() => {
-    router.push('/');
-  }, [router]);
 
   const currentProfile: ImmProfile = profiles[currentProfileIndex];
 
