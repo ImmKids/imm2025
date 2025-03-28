@@ -4,10 +4,9 @@ import { useRouter } from 'next/navigation';
 
 interface PlaylistItemProps {
   profile: ImmProfile;
-  onClick?: () => void;
 }
 
-export default function PlaylistItem({ profile, onClick }: PlaylistItemProps) {
+export default function PlaylistItem({ profile }: PlaylistItemProps) {
   const router = useRouter();
 
   const handleClick = () => {

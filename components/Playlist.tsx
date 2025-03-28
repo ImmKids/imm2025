@@ -28,7 +28,7 @@ export default function Playlist({ profiles: initialProfiles }: PlaylistProps) {
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <div className="text-xl font-bold text-[#414759]">
-          We are IMM's 2025
+          We are IMM&apos;s 2025
         </div>
         <div className="flex gap-4">
           <button 

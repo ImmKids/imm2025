@@ -2,13 +2,13 @@
 
 import Image from 'next/image';
 import ProfileCard from '@/components/ProfileCard';
-import { useState, useEffect, useMemo, useCallback } from 'react';
+import { useState, useEffect, useMemo, useCallback, Suspense } from 'react';
 import { getImmProfiles } from '@/lib/api';
 import { ImmProfile } from '@/lib/types';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
 
-export default function Prototype() {
+function ProfileContent() {
   const profiles = useMemo(() => getImmProfiles(), []);
   const searchParams = useSearchParams();
   const router = useRouter();
@@ -136,5 +136,13 @@ export default function Prototype() {
         </AnimatePresence>
       </div>
     </div>
+  );
+}
+
+export default function Prototype() {
+  return (
+    <Suspense fallback={<div>Loading...</div>}>
+      <ProfileContent />
+    </Suspense>
   );
 }
