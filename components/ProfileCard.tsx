@@ -33,7 +33,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
       animate={{ opacity: 1, y: 0 }}
       exit={{ opacity: 0, y: -20 }}
       transition={{ duration: 0.3 }}
-      className="w-[600px] h-auto bg-white p-6 flex flex-col gap-4 rounded-2xl border-4 border-[#C3BCBC]"
+      className="w-[var(--card-width)] h-auto bg-white p-6 flex flex-col gap-4 rounded-2xl border-4 border-[#C3BCBC]"
     >
       {/* Top row - Square image */}
       <motion.div 

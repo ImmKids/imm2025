@@ -24,7 +24,7 @@ export default function Playlist({ profiles: initialProfiles }: PlaylistProps) {
   };
 
   return (
-    <div className="rounded-lg p-6">
+    <div className="rounded-lg p-0">
       {/* Header */}
       <div className="flex items-center justify-between mb-6">
         <div className="text-xl font-bold text-[#414759]">

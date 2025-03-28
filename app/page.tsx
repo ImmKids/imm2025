@@ -13,7 +13,7 @@ export default function Home() {
       <div className="flex-1"></div>
 
       {/* Center Column */}
-      <div className="flex-[3] max-w-[800px] flex flex-col gap-8 py-8">
+      <div className="w-[var(--card-width)] flex flex-col gap-8 py-8">
         {/* Hero Image */}
         <div className="w-full aspect-[4/3] bg-gray-200 rounded-lg relative overflow-hidden">
           <Image 
