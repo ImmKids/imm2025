@@ -14,7 +14,8 @@ export function getImmProfiles(): ImmProfile[] {
       topImage: PLACEHOLDER_WORK,
       linkedinUrl: "https://linkedin.com/in/aurelia",
       instagramUrl: "https://instagram.com/aurelia",
-      githubUrl: "https://github.com/aurelia"
+      githubUrl: "https://github.com/aurelia",
+      portfolioUrl: "https://portfolio.aurelia.com"
     },
     {
       id: 2,
@@ -25,7 +26,8 @@ export function getImmProfiles(): ImmProfile[] {
       topImage: PLACEHOLDER_WORK,
       linkedinUrl: "https://linkedin.com/in/cecellia",
       instagramUrl: "https://instagram.com/cecellia",
-      githubUrl: "https://github.com/cecellia"
+      githubUrl: "https://github.com/cecellia",
+      portfolioUrl: "https://portfolio.cecellia.com"
     },
     {
       id: 3,
@@ -36,7 +38,8 @@ export function getImmProfiles(): ImmProfile[] {
       topImage: PLACEHOLDER_WORK,
       linkedinUrl: "https://linkedin.com/in/celeste",
       instagramUrl: "https://instagram.com/celeste",
-      githubUrl: "https://github.com/celeste"
+      githubUrl: "https://github.com/celeste",
+      portfolioUrl: "https://portfolio.celeste.com"
     },
     {
       id: 4,
@@ -47,7 +50,8 @@ export function getImmProfiles(): ImmProfile[] {
       topImage: PLACEHOLDER_WORK,
       linkedinUrl: "https://linkedin.com/in/chen",
       instagramUrl: "https://instagram.com/chen",
-      githubUrl: "https://github.com/chen"
+      githubUrl: "https://github.com/chen",
+      portfolioUrl: "https://portfolio.chen.com"
     },
     {
       id: 5,
@@ -58,7 +62,8 @@ export function getImmProfiles(): ImmProfile[] {
       topImage: PLACEHOLDER_WORK,
       linkedinUrl: "https://linkedin.com/in/clay",
       instagramUrl: "https://instagram.com/clay",
-      githubUrl: "https://github.com/clay"
+      githubUrl: "https://github.com/clay",
+      portfolioUrl: "https://portfolio.clay.com"
     },
     {
       id: 6,
@@ -69,7 +74,8 @@ export function getImmProfiles(): ImmProfile[] {
       topImage: PLACEHOLDER_WORK,
       linkedinUrl: "https://linkedin.com/in/ian",
       instagramUrl: "https://instagram.com/ian",
-      githubUrl: "https://github.com/ian"
+      githubUrl: "https://github.com/ian",
+      portfolioUrl: "https://portfolio.ian.com"
     },
     {
       id: 7,
@@ -80,7 +86,8 @@ export function getImmProfiles(): ImmProfile[] {
       topImage: PLACEHOLDER_WORK,
       linkedinUrl: "https://linkedin.com/in/kanwal",
       instagramUrl: "https://instagram.com/kanwal",
-      githubUrl: "https://github.com/kanwal"
+      githubUrl: "https://github.com/kanwal",
+      portfolioUrl: "https://portfolio.kanwal.com"
     },
     {
       id: 8,
@@ -91,7 +98,8 @@ export function getImmProfiles(): ImmProfile[] {
       topImage: PLACEHOLDER_WORK,
       linkedinUrl: "https://linkedin.com/in/lina",
       instagramUrl: "https://instagram.com/lina",
-      githubUrl: "https://github.com/lina"
+      githubUrl: "https://github.com/lina",
+      portfolioUrl: "https://portfolio.lina.com"
     },
     {
       id: 9,
@@ -102,7 +110,8 @@ export function getImmProfiles(): ImmProfile[] {
       topImage: PLACEHOLDER_WORK,
       linkedinUrl: "https://linkedin.com/in/meggie",
       instagramUrl: "https://instagram.com/meggie",
-      githubUrl: "https://github.com/meggie"
+      githubUrl: "https://github.com/meggie",
+      portfolioUrl: "https://portfolio.meggie.com"
     },
     {
       id: 10,
@@ -113,7 +122,8 @@ export function getImmProfiles(): ImmProfile[] {
       topImage: PLACEHOLDER_WORK,
       linkedinUrl: "https://linkedin.com/in/mint",
       instagramUrl: "https://instagram.com/mint",
-      githubUrl: "https://github.com/mint"
+      githubUrl: "https://github.com/mint",
+      portfolioUrl: "https://portfolio.mint.com"
     },
     {
       id: 11,
@@ -124,7 +134,8 @@ export function getImmProfiles(): ImmProfile[] {
       topImage: PLACEHOLDER_WORK,
       linkedinUrl: "https://linkedin.com/in/pris",
       instagramUrl: "https://instagram.com/pris",
-      githubUrl: "https://github.com/pris"
+      githubUrl: "https://github.com/pris",
+      portfolioUrl: "https://portfolio.pris.com"
     },
     {
       id: 12,
@@ -135,7 +146,8 @@ export function getImmProfiles(): ImmProfile[] {
       topImage: PLACEHOLDER_WORK,
       linkedinUrl: "https://linkedin.com/in/ryan",
       instagramUrl: "https://instagram.com/ryan",
-      githubUrl: "https://github.com/ryan"
+      githubUrl: "https://github.com/ryan",
+      portfolioUrl: "https://portfolio.ryan.com"
     },
     {
       id: 13,
@@ -146,7 +158,8 @@ export function getImmProfiles(): ImmProfile[] {
       topImage: PLACEHOLDER_WORK,
       linkedinUrl: "https://linkedin.com/in/shiv",
       instagramUrl: "https://instagram.com/shiv",
-      githubUrl: "https://github.com/shiv"
+      githubUrl: "https://github.com/shiv",
+      portfolioUrl: "https://portfolio.shiv.com"
     },
     {
       id: 14,
@@ -157,7 +170,8 @@ export function getImmProfiles(): ImmProfile[] {
       topImage: PLACEHOLDER_WORK,
       linkedinUrl: "https://linkedin.com/in/sid",
       instagramUrl: "https://instagram.com/sid",
-      githubUrl: "https://github.com/sid"
+      githubUrl: "https://github.com/sid",
+      portfolioUrl: "https://portfolio.sid.com"
     },
     {
       id: 15,
@@ -168,7 +182,8 @@ export function getImmProfiles(): ImmProfile[] {
       topImage: PLACEHOLDER_WORK,
       linkedinUrl: "https://linkedin.com/in/yan",
       instagramUrl: "https://instagram.com/yan",
-      githubUrl: "https://github.com/yan"
+      githubUrl: "https://github.com/yan",
+      portfolioUrl: "https://portfolio.yan.com"
     }
   ];
 }

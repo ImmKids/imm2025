@@ -8,4 +8,5 @@ export interface ImmProfile {
   linkedinUrl: string;
   instagramUrl: string;
   githubUrl: string;
+  portfolioUrl: string;
 } 

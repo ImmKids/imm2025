@@ -9,6 +9,7 @@ interface ProfileCardProps {
   profileImage: string;
   topImage: string;
   linkedinUrl: string;
+  portfolioUrl: string;
   onPrevious?: () => void;
   onPlay?: () => void;
   onNext?: () => void;
@@ -21,6 +22,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
   profileImage,
   topImage,
   linkedinUrl,
+  portfolioUrl,
   onPrevious,
   onPlay,
   onNext,
@@ -87,6 +89,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
         <motion.button 
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
+          onClick={() => window.open(portfolioUrl, '_blank')}
           className="px-8 py-2 bg-[#65688D] text-white rounded-2xl hover:bg-[#887D9A]"
         >
           Portfolio

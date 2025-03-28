@@ -7,7 +7,7 @@ import { getImmProfiles } from '@/lib/api';
 import { ImmProfile } from '@/lib/types';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import {  ArrowLeft } from 'lucide-react'; //ChevronLeft, ChevronRight, Play, Linkedin,
+import {  ArrowLeft } from 'lucide-react';
 
 function ProfileContent() {
   const profiles = useMemo(() => getImmProfiles(), []);
@@ -78,6 +78,7 @@ function ProfileContent() {
             profileImage={currentProfile.profileImage}
             topImage={currentProfile.topImage}
             linkedinUrl={currentProfile.linkedinUrl}
+            portfolioUrl={currentProfile.portfolioUrl}
             onPrevious={handlePrevious}
             onPlay={handlePlay}
             onNext={handleNext}
