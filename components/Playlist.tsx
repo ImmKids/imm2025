@@ -38,7 +38,7 @@ export default function Playlist({ profiles: initialProfiles }: PlaylistProps) {
           </button>
           <button 
             onClick={handlePlay}
-            className="p-2 bg-blue-500 hover:bg-blue-600 rounded-full text-white">
+            className="p-2 bg-[#AEC9FF] hover:bg-[#9DB8FF] rounded-full text-white border border-black">
             <Play className="w-6 h-6" />
           </button>
         </div>
