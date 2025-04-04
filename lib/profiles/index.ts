@@ -2,7 +2,6 @@ import { aureliaProfile } from './aurelia';
 import { ceciliaProfile } from './cecilia';
 import { celesteProfile } from './celeste';
 import { chenProfile } from './chen';
-import { clayProfile } from './clay';
 import { ianProfile } from './ian';
 import { kanwalProfile } from './kanwal';
 import { linaProfile } from './lina';
@@ -13,13 +12,13 @@ import { ryanProfile } from './ryan';
 import { shivProfile } from './shiv';
 import { sidProfile } from './sid';
 import { yanProfile } from './yan';
+import { yuntianProfile } from './yuntian';
 
 export const profiles = [
   aureliaProfile,
   ceciliaProfile,
   celesteProfile,
   chenProfile,
-  clayProfile,
   ianProfile,
   kanwalProfile,
   linaProfile,
@@ -29,5 +28,6 @@ export const profiles = [
   ryanProfile,
   shivProfile,
   sidProfile,
-  yanProfile
+  yanProfile,
+  yuntianProfile
 ]; 
