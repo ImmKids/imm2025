@@ -8,7 +8,7 @@ export const yanProfile: ImmProfile = {
   description: "Creative spirit who evolved from fashion design into digital creation! Exploring the exciting world of interactive media while blending artistic vision with coding skills. Crafting engaging content across platforms and always eager for the next creative challenge!",
   profileImage: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/webp_512/yan-1_512.webp",
   topImage: PLACEHOLDER_WORK,
-  linkedinUrl: "www.linkedin.com/in/yan-huo-6f",
+  linkedinUrl: "https://www.linkedin.com/in/yan-huo-6f",
   instagramUrl: "https://instagram.com/hyan.h7",
   githubUrl: "",
   portfolioUrl: ""

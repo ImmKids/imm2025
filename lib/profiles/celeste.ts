@@ -8,7 +8,7 @@ export const celesteProfile: ImmProfile = {
   description: "UX/UI designer, illustrator & creative with 8+ years in design & visual storytelling. From global brands to NFTs, I now specialize in creating polished, user-centered digital experiences.",
   profileImage: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/webp_512/celeste-1_512.webp",
   topImage: PLACEHOLDER_WORK,
-  linkedinUrl: "www.linkedin.com/in/xi-y-celeste0617",
+  linkedinUrl: "https://www.linkedin.com/in/xi-y-celeste0617",
   instagramUrl: "https://www.instagram.com/celeste_tattooer/",
   githubUrl: "",
   portfolioUrl: ""

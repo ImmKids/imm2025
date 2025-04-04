@@ -8,7 +8,7 @@ export const prisProfile: ImmProfile = {
   description: "Innovative game designer specialized in illustration, UX/UI, 3D animation, coding, and art direction, bridging technology and artistry. A lifestyle influencer exploring BJD art, dance, fashion, and sharing unique cultural insights globally.",
   profileImage: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/webp_512/pris-1_512.webp",
   topImage: PLACEHOLDER_WORK,
-  linkedinUrl: "www.linkedin.com/in/pristan0705",
+  linkedinUrl: "https://www.linkedin.com/in/pristan0705",
   instagramUrl: "https://instagram.com/pris_0705",
   githubUrl: "",
   portfolioUrl: ""

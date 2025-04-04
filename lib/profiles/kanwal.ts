@@ -8,7 +8,7 @@ export const kanwalProfile: ImmProfile = {
   description: "With 7+ years in Product Management, I craft intuitive, user-centered solutions that are both visually stunning and functionally seamless. My passion for visual storytelling drives me to transform complex challenges into engaging digital experiences.",
   profileImage: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/webp_512/kanwal-1_512.webp",
   topImage: PLACEHOLDER_WORK,
-  linkedinUrl: "linkedin.com/in/kanwal-tariq",
+  linkedinUrl: "https://www.linkedin.com/in/kanwal-tariq",
   instagramUrl: "",
   githubUrl: "",
   portfolioUrl: "https://uxfol.io/0194019a"
