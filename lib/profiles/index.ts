@@ -1,5 +1,5 @@
 import { aureliaProfile } from './aurelia';
-import { cecelliaProfile } from './cecellia';
+import { ceciliaProfile } from './cecilia';
 import { celesteProfile } from './celeste';
 import { chenProfile } from './chen';
 import { clayProfile } from './clay';
@@ -16,7 +16,7 @@ import { yanProfile } from './yan';
 
 export const profiles = [
   aureliaProfile,
-  cecelliaProfile,
+  ceciliaProfile,
   celesteProfile,
   chenProfile,
   clayProfile,

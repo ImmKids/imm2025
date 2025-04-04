@@ -1,12 +1,12 @@
 import { ImmProfile } from '../types';
-import { PLACEHOLDER_PROFILE, PLACEHOLDER_WORK } from '../constants';
+import { PLACEHOLDER_WORK } from '../constants';
 
 export const aureliaProfile: ImmProfile = {
   id: 1,
   name: "AURELIA",
   title: "Interaction Designer", 
   description: "Designing innovative ways for users to interact with digital products. Passionate about creating intuitive and delightful user experiences.",
-  profileImage: PLACEHOLDER_PROFILE,
+  profileImage: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/webp_512/aurelia-1_512.webp",
   topImage: PLACEHOLDER_WORK,
   linkedinUrl: "https://linkedin.com/in/aurelia",
   instagramUrl: "https://instagram.com/aurelia",

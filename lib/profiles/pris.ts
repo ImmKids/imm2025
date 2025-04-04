@@ -1,12 +1,12 @@
 import { ImmProfile } from '../types';
-import { PLACEHOLDER_PROFILE, PLACEHOLDER_WORK } from '../constants';
+import { PLACEHOLDER_WORK } from '../constants';
 
 export const prisProfile: ImmProfile = {
   id: 11,
   name: "PRIS",
   title: "Creative Technologist",
   description: "Merging art and technology to create unique digital experiences. Focused on experimental interfaces and creative coding.",
-  profileImage: PLACEHOLDER_PROFILE,
+  profileImage: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/webp_512/pris-1_512.webp",
   topImage: PLACEHOLDER_WORK,
   linkedinUrl: "https://linkedin.com/in/pris",
   instagramUrl: "https://instagram.com/pris",
