@@ -71,7 +71,6 @@ export default function DoodleBackground({ profiles, currentProfileId }: DoodleB
   return (
     <div className="absolute inset-0 z-0">
       {allDoodles.map((doodle: Doodle, index) => {
-        const isPlaceholder = doodle.base.includes('picsum.photos');
         const doodleKey = `${doodle.base}-${index}-${currentProfileId}`;
         const isHovered = hoveredDoodles[doodleKey] || false;
 

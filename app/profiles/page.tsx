@@ -7,7 +7,7 @@ import { useState, useEffect, useMemo, useCallback, Suspense } from 'react';
 import { getImmProfiles } from '@/lib/api';
 import { ImmProfile } from '@/lib/types';
 import { useSearchParams, useRouter } from 'next/navigation';
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { ArrowLeft } from 'lucide-react';
 import DoodleBackground from '@/components/DoodleBackground';
 
