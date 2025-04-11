@@ -10,6 +10,6 @@ export const celesteProfile: ImmProfile = {
   topImage: PLACEHOLDER_WORK,
   linkedinUrl: "https://www.linkedin.com/in/xi-y-celeste0617",
   instagramUrl: "https://www.instagram.com/celeste_tattooer/",
-  githubUrl: "",
+  githubUrl: "https://github.com/CELESTEYAN0617",
   portfolioUrl: ""
 }; 
