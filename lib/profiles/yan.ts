@@ -1,5 +1,4 @@
 import { ImmProfile } from '../types';
-import { PLACEHOLDER_WORK } from '../constants';
 
 export const yanProfile: ImmProfile = {
   id: 15,
