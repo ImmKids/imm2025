@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 :root {
-  --background: #0a0a0a;
+  --background: #E4F5FF;
   --foreground: #ededed;
   --header-height: 5rem; /* 96px */
   --card-width: 700px;    /* new variable */

@@ -13,8 +13,11 @@ export const sidProfile: ImmProfile = {
   githubUrl: "",
   portfolioUrl: "",
   doodles: [
-    "https://picsum.photos/400/300",
-    "https://picsum.photos/400/300",
-    "https://picsum.photos/400/300"
+    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/sid/sid1.png",
+    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/sid/sid1hover.png",
+    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/sid/sid2.png",
+    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/sid/sid3.png",
+    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/sid/sid4.png",
+    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/sid/sid5.png"
   ]
 }; 

@@ -13,8 +13,7 @@ export const prisProfile: ImmProfile = {
   githubUrl: "",
   portfolioUrl: "",
   doodles: [
-    "https://picsum.photos/400/300",
-    "https://picsum.photos/400/300",
-    "https://picsum.photos/400/300"
+    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/pris/pris.png",
+    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/pris/prishover.png"
   ]
 }; 

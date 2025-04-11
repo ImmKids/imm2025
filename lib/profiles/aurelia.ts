@@ -13,8 +13,7 @@ export const aureliaProfile: ImmProfile = {
   githubUrl: "",
   portfolioUrl: "https://aureliayi.me",
   doodles: [
-    "https://picsum.photos/400/300",
-    "https://picsum.photos/400/300",
-    "https://picsum.photos/400/300"
+    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/aurelia/aurelia1.png",
+    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/aurelia/aurelia2.png"
   ]
 }; 

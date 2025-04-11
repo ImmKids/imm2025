@@ -13,8 +13,7 @@ export const linaProfile: ImmProfile = {
   githubUrl: "https://github.com/linadyl",
   portfolioUrl: "https://linaportfolio.site",
   doodles: [
-    "https://picsum.photos/400/300",
-    "https://picsum.photos/400/300",
-    "https://picsum.photos/400/300"
+    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/lina/lina1.png",
+    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/lina/lina2.png"
   ]
 }; 

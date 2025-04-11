@@ -13,8 +13,7 @@ export const chenProfile: ImmProfile = {
   githubUrl: "",
   portfolioUrl: "",
   doodles: [
-    "https://picsum.photos/400/300",
-    "https://picsum.photos/400/300",
-    "https://picsum.photos/400/300"
+    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/chen/chen.png",
+    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/chen/chenhover.png"
   ]
 }; 
