@@ -69,7 +69,7 @@ export default function DoodleBackground({ profiles, currentProfileId }: DoodleB
   const allDoodles = currentProfile ? currentProfile.doodles : profiles.flatMap(p => p.doodles);
 
   return (
-    <div className="absolute inset-0 z-0">
+    <div className="fixed inset-0 z-0 overflow-hidden">
       {allDoodles.map((doodle: Doodle, index) => {
         const doodleKey = `${doodle.base}-${index}-${currentProfileId}`;
         const isHovered = hoveredDoodles[doodleKey] || false;
@@ -127,14 +127,14 @@ export default function DoodleBackground({ profiles, currentProfileId }: DoodleB
                   src={doodle.hover}
                   alt="Doodle Hover"
                   fill
-                  className={`object-contain rounded-lg transition-all duration-300 ${isHovered ? 'opacity-100 scale-110' : 'opacity-0'}`}
+                  className={`object-contain rounded-lg transition-all duration-300 transform-gpu will-change-transform origin-center ${isHovered ? 'opacity-100 scale-110' : 'opacity-0'}`}
                 />
               ) : (
                 <Image
                   src={doodle.base}
                   alt="Doodle Hover"
                   fill
-                  className={`object-contain rounded-lg transition-all duration-300 ${isHovered ? 'opacity-100 scale-110 rotate-6' : 'opacity-0'}`}
+                  className={`object-contain rounded-lg transition-all duration-300 transform-gpu will-change-transform origin-center ${isHovered ? 'opacity-100 scale-110 rotate-6' : 'opacity-0'}`}
                 />
               )}
             </div>
