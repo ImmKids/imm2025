@@ -1,15 +1,14 @@
 'use client';
 
 import { useSearchParams } from 'next/navigation';
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { getImmProfiles } from '@/lib/api';
 import { ImmProfile } from '@/lib/types';
-import { useRouter } from 'next/navigation';
+// import { useRouter } from 'next/navigation';
 
 export default function ProfileHead() {
   const searchParams = useSearchParams();
-  const [profile, setProfile] = useState<ImmProfile | null>(null);
-  const router = useRouter();
+  // const router = useRouter();
   
   useEffect(() => {
     const id = searchParams.get('id');
@@ -17,8 +16,6 @@ export default function ProfileHead() {
       const profiles = getImmProfiles();
       const foundProfile = profiles.find(p => p.id === parseInt(id, 10));
       if (foundProfile) {
-        setProfile(foundProfile);
-        
         document.title = `${foundProfile.name} - ${foundProfile.title} | IMM Grad Show 2025`;
         
         updateMetaTags(foundProfile);

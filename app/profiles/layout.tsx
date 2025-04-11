@@ -1,7 +1,6 @@
 // profile metadata layout
 import type { Metadata } from "next";
-import fs from 'fs';
-import path from 'path';
+
 
 // default metadata fallback
 export const metadata: Metadata = {
