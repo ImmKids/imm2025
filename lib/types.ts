@@ -1,3 +1,8 @@
+export interface Doodle {
+  base: string;
+  hover?: string;
+}
+
 export interface ImmProfile {
   id: number;
   name: string;
@@ -9,5 +14,5 @@ export interface ImmProfile {
   instagramUrl: string;
   githubUrl: string;
   portfolioUrl: string;
-  doodles: string[];
+  doodles: Doodle[];
 } 

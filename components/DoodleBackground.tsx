@@ -1,6 +1,6 @@
 import { motion } from 'framer-motion';
 import Image from 'next/image';
-import { ImmProfile } from '@/lib/types';
+import { ImmProfile, Doodle } from '@/lib/types';
 import { useEffect, useState } from 'react';
 
 interface DoodleBackgroundProps {
@@ -16,6 +16,7 @@ export default function DoodleBackground({ profiles, currentProfileId }: DoodleB
     scale: number;
     side: 'left' | 'right';
   }>>([]);
+  const [hoveredDoodles, setHoveredDoodles] = useState<Record<string, boolean>>({});
 
   // Function to generate positions for left and right sides
   const generatePositions = (count: number) => {
@@ -68,36 +69,92 @@ export default function DoodleBackground({ profiles, currentProfileId }: DoodleB
   const allDoodles = currentProfile ? currentProfile.doodles : profiles.flatMap(p => p.doodles);
 
   return (
-    <div className="fixed inset-0 -z-10 overflow-hidden">
-      {allDoodles.map((doodle, index) => (
-        <motion.div
-          key={`${doodle}-${index}-${currentProfileId}`}
-          initial={{ opacity: 0, scale: 0 }}
-          animate={{ 
-            opacity: 1, 
-            scale: doodlePositions[index]?.scale || 1,
-            x: doodlePositions[index]?.x || 0,
-            y: doodlePositions[index]?.y || 0,
-            rotate: doodlePositions[index]?.rotation || 0
-          }}
-          transition={{ 
-            duration: 0.8,
-            delay: index * 0.05,
-            ease: "easeOut"
-          }}
-          className="absolute w-[400px] h-[300px]" // Increased base size
-          style={{
-            transform: `translate(${doodlePositions[index]?.x || 0}px, ${doodlePositions[index]?.y || 0}px) rotate(${doodlePositions[index]?.rotation || 0}deg)`
-          }}
-        >
-          <Image
-            src={doodle}
-            alt="Doodle"
-            fill
-            className="object-contain rounded-lg opacity-30 hover:opacity-60 transition-all duration-300 hover:scale-110" // Changed from object-cover to object-contain
-          />
-        </motion.div>
-      ))}
+    <div className="absolute inset-0 z-0">
+      {allDoodles.map((doodle: Doodle, index) => {
+        const isPlaceholder = doodle.base.includes('picsum.photos');
+        const doodleKey = `${doodle.base}-${index}-${currentProfileId}`;
+        const isHovered = hoveredDoodles[doodleKey] || false;
+
+        return (
+          <motion.div
+            key={doodleKey}
+            initial={{ opacity: 0, scale: 0 }}
+            animate={{ 
+              opacity: 1, 
+              scale: doodlePositions[index]?.scale || 1,
+              x: doodlePositions[index]?.x || 0,
+              y: doodlePositions[index]?.y || 0,
+              rotate: doodlePositions[index]?.rotation || 0
+            }}
+            transition={{ 
+              duration: 0.8,
+              delay: index * 0.05,
+              ease: "easeOut"
+            }}
+            className="absolute w-[400px] h-[300px] group cursor-pointer"
+            style={{
+              transform: `translate(${doodlePositions[index]?.x || 0}px, ${doodlePositions[index]?.y || 0}px) rotate(${doodlePositions[index]?.rotation || 0}deg)`
+            }}
+            onMouseEnter={() => {
+              console.log('Mouse entered doodle:', {
+                base: doodle.base,
+                hover: doodle.hover,
+                index,
+                isHovered
+              });
+              setHoveredDoodles(prev => ({ ...prev, [doodleKey]: true }));
+            }}
+            onMouseLeave={() => {
+              console.log('Mouse left doodle:', {
+                base: doodle.base,
+                hover: doodle.hover,
+                index,
+                isHovered
+              });
+              setHoveredDoodles(prev => ({ ...prev, [doodleKey]: false }));
+            }}
+          >
+            <div className="relative w-full h-full">
+              {/* Base image - only visible when not hovered */}
+              <Image
+                src={doodle.base}
+                alt="Doodle"
+                fill
+                className={`object-contain rounded-lg transition-all duration-300 ${isHovered ? 'opacity-0' : 'opacity-30'}`}
+              />
+              {/* Hover image or effect - only visible when hovered */}
+              {doodle.hover ? (
+                <Image
+                  src={doodle.hover}
+                  alt="Doodle Hover"
+                  fill
+                  className={`object-contain rounded-lg transition-all duration-300 ${isHovered ? 'opacity-100 scale-110' : 'opacity-0'}`}
+                />
+              ) : isPlaceholder ? (
+                <div className={`absolute inset-0 transition-all duration-300 ${isHovered ? 'opacity-100 scale-110' : 'opacity-0'}`}>
+                  <Image
+                    src={doodle.base}
+                    alt="Doodle Hover"
+                    fill
+                    className="object-contain rounded-lg"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-teal-500/20 rounded-lg" />
+                </div>
+              ) : (
+                <div className={`absolute inset-0 transition-all duration-300 ${isHovered ? 'opacity-100 scale-110' : 'opacity-0'}`}>
+                  <Image
+                    src={doodle.base}
+                    alt="Doodle Hover"
+                    fill
+                    className="object-contain rounded-lg"
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-lg" />
+                </div>
+              )}
+            </div>
+          </motion.div>
+        );
+      })}
     </div>
   );
 } 

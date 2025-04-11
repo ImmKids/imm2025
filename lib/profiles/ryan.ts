@@ -13,9 +13,17 @@ export const ryanProfile: ImmProfile = {
   githubUrl: "",
   portfolioUrl: "",
   doodles: [
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ryan/ryan2.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ryan/ryan3.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ryan/ryan4.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ryan/ryandoodles.png"
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ryan/ryan2.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ryan/ryan3.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ryan/ryan4.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ryan/ryandoodles.png"
+    }
   ]
 }; 

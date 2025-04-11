@@ -12,7 +12,9 @@ export const chenProfile: ImmProfile = {
   githubUrl: "",
   portfolioUrl: "",
   doodles: [
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/chen/chen.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/chen/chenhover.png"
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/chen/chen.png",
+      hover: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/chen/chenhover.png"
+    }
   ]
 }; 

@@ -12,10 +12,20 @@ export const yuntianProfile: ImmProfile = {
   githubUrl: "https://github.com/chaiyuntian",
   portfolioUrl: "https://www.talemonks.com/",
   doodles: [
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/clay/claydoodles.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/clay/claydoodles.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/clay/claydoodles.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/clay/claydoodles.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/clay/claydoodles.png"
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/clay/claydoodles.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/clay/claydoodles.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/clay/claydoodles.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/clay/claydoodles.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/clay/claydoodles.png"
+    }
   ]
 }; 
