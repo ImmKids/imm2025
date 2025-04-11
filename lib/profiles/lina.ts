@@ -11,5 +11,10 @@ export const linaProfile: ImmProfile = {
   linkedinUrl: "https://linkedin.com/in/lina",
   instagramUrl: "https://instagram.com/lina",
   githubUrl: "https://github.com/lina",
-  portfolioUrl: "https://portfolio.lina.com"
+  portfolioUrl: "https://portfolio.lina.com",
+  doodles: [
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300"
+  ]
 }; 

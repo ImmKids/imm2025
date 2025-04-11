@@ -11,5 +11,10 @@ export const sidProfile: ImmProfile = {
   linkedinUrl: "https://www.linkedin.com/in/siddharth-satish-kumar/",
   instagramUrl: "https://instagram.com/lettersnumbersandafullstop",
   githubUrl: "",
-  portfolioUrl: ""
+  portfolioUrl: "",
+  doodles: [
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300"
+  ]
 }; 

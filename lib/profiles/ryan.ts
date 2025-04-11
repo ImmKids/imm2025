@@ -11,5 +11,10 @@ export const ryanProfile: ImmProfile = {
   linkedinUrl: "https://www.linkedin.com/in/ryan-siu-lung-chan-88aa23121/",
   instagramUrl: "https://www.instagram.com/ryanslchan/",
   githubUrl: "",
-  portfolioUrl: ""
+  portfolioUrl: "",
+  doodles: [
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300"
+  ]
 }; 

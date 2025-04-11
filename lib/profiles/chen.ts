@@ -11,5 +11,10 @@ export const chenProfile: ImmProfile = {
   linkedinUrl: "https://www.linkedin.com/in/zccchen/",
   instagramUrl: "",
   githubUrl: "",
-  portfolioUrl: ""
+  portfolioUrl: "",
+  doodles: [
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300"
+  ]
 }; 

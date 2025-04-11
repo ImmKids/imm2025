@@ -11,5 +11,10 @@ export const shivProfile: ImmProfile = {
   linkedinUrl: "https://www.linkedin.com/in/shivansh-mahendru/",
   instagramUrl: "https://www.instagram.com/manmadegames/",
   githubUrl: "https://github.com/shivtherumbler",
-  portfolioUrl: "https://shivanshmahendru.myportfolio.com/"
+  portfolioUrl: "https://shivanshmahendru.myportfolio.com/",
+  doodles: [
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300"
+  ]
 }; 

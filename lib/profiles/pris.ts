@@ -11,5 +11,10 @@ export const prisProfile: ImmProfile = {
   linkedinUrl: "https://www.linkedin.com/in/pristan0705",
   instagramUrl: "https://instagram.com/pris_0705",
   githubUrl: "",
-  portfolioUrl: ""
+  portfolioUrl: "",
+  doodles: [
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300"
+  ]
 }; 

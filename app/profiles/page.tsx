@@ -7,7 +7,8 @@ import { getImmProfiles } from '@/lib/api';
 import { ImmProfile } from '@/lib/types';
 import { useSearchParams, useRouter } from 'next/navigation';
 import { motion, AnimatePresence } from 'framer-motion';
-import {  ArrowLeft } from 'lucide-react';
+import { ArrowLeft } from 'lucide-react';
+import DoodleBackground from '@/components/DoodleBackground';
 
 function ProfileContent() {
   const profiles = useMemo(() => getImmProfiles(), []);
@@ -57,16 +58,8 @@ function ProfileContent() {
 
   return (
     <div className="relative min-h-screen w-full">
-      {/* Background Image */}
-      <div className="fixed inset-0 -z-10">
-        <Image
-          src="/bg.jpg"
-          alt="Background"
-          fill
-          className="object-cover"
-          priority
-        />
-      </div>
+      {/* Doodle Background */}
+      <DoodleBackground profiles={profiles} currentProfileId={currentProfile.id} />
 
       {/* Content */}
       <div className="relative z-10 flex min-h-screen items-center justify-center">

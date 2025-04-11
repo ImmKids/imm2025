@@ -11,5 +11,10 @@ export const yuntianProfile: ImmProfile = {
   linkedinUrl: "https://www.linkedin.com/in/yuntian-chai-4795b7b3/",
   instagramUrl: "",
   githubUrl: "https://github.com/chaiyuntian",
-  portfolioUrl: "https://www.talemonks.com/"
+  portfolioUrl: "https://www.talemonks.com/",
+  doodles: [
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300"
+  ]
 }; 
