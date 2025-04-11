@@ -130,26 +130,13 @@ export default function DoodleBackground({ profiles, currentProfileId }: DoodleB
                   fill
                   className={`object-contain rounded-lg transition-all duration-300 ${isHovered ? 'opacity-100 scale-110' : 'opacity-0'}`}
                 />
-              ) : isPlaceholder ? (
-                <div className={`absolute inset-0 transition-all duration-300 ${isHovered ? 'opacity-100 scale-110' : 'opacity-0'}`}>
-                  <Image
-                    src={doodle.base}
-                    alt="Doodle Hover"
-                    fill
-                    className="object-contain rounded-lg"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-500/20 to-teal-500/20 rounded-lg" />
-                </div>
               ) : (
-                <div className={`absolute inset-0 transition-all duration-300 ${isHovered ? 'opacity-100 scale-110' : 'opacity-0'}`}>
-                  <Image
-                    src={doodle.base}
-                    alt="Doodle Hover"
-                    fill
-                    className="object-contain rounded-lg"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-500/20 to-pink-500/20 rounded-lg" />
-                </div>
+                <Image
+                  src={doodle.base}
+                  alt="Doodle Hover"
+                  fill
+                  className={`object-contain rounded-lg transition-all duration-300 ${isHovered ? 'opacity-100 scale-110 rotate-6' : 'opacity-0'}`}
+                />
               )}
             </div>
           </motion.div>
