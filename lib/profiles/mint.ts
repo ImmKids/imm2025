@@ -11,5 +11,10 @@ export const mintProfile: ImmProfile = {
   linkedinUrl: "https://www.linkedin.com/in/mint-zhong",
   instagramUrl: "",
   githubUrl: "",
-  portfolioUrl: ""
+  portfolioUrl: "",
+  doodles: [
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300"
+  ]
 }; 

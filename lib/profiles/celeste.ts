@@ -11,5 +11,10 @@ export const celesteProfile: ImmProfile = {
   linkedinUrl: "https://www.linkedin.com/in/xi-y-celeste0617",
   instagramUrl: "https://www.instagram.com/celeste_tattooer/",
   githubUrl: "https://github.com/CELESTEYAN0617",
-  portfolioUrl: ""
+  portfolioUrl: "",
+  doodles: [
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300"
+  ]
 }; 

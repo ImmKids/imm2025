@@ -9,4 +9,5 @@ export interface ImmProfile {
   instagramUrl: string;
   githubUrl: string;
   portfolioUrl: string;
+  doodles: string[];
 } 

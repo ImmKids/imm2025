@@ -11,5 +11,10 @@ export const yanProfile: ImmProfile = {
   linkedinUrl: "https://www.linkedin.com/in/yan-huo-6f",
   instagramUrl: "https://instagram.com/hyan.h7",
   githubUrl: "",
-  portfolioUrl: ""
+  portfolioUrl: "",
+  doodles: [
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300"
+  ]
 }; 

@@ -11,5 +11,10 @@ export const kanwalProfile: ImmProfile = {
   linkedinUrl: "https://www.linkedin.com/in/kanwal-tariq",
   instagramUrl: "",
   githubUrl: "",
-  portfolioUrl: "https://uxfol.io/0194019a"
+  portfolioUrl: "https://uxfol.io/0194019a",
+  doodles: [
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300"
+  ]
 }; 

@@ -11,5 +11,10 @@ export const meggieProfile: ImmProfile = {
   linkedinUrl: "https://www.linkedin.com/in/meggie-wu/",
   instagramUrl: "",
   githubUrl: "",
-  portfolioUrl: ""
+  portfolioUrl: "",
+  doodles: [
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300"
+  ]
 }; 

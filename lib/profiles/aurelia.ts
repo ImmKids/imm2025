@@ -11,5 +11,10 @@ export const aureliaProfile: ImmProfile = {
   linkedinUrl: "https://www.linkedin.com/in/yuke-yi",
   instagramUrl: "https://instagram.com/aurelia.yyk",
   githubUrl: "",
-  portfolioUrl: "https://aureliayi.me"
+  portfolioUrl: "https://aureliayi.me",
+  doodles: [
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300",
+    "https://picsum.photos/400/300"
+  ]
 }; 
