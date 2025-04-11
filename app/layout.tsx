@@ -36,7 +36,22 @@ const jaro = Jaro({
 
 export const metadata: Metadata = {
   title: "IMM Grad Show 2025",
-  description: "IMM Grad Show 2025",
+  description: "Sheridan IMM | Graduate Showcase 2025",
+  openGraph: {
+    title: "IMM Grad Show 2025",
+    description: "IMM Graduate Showcase of Creative Interactive Digital Work.",
+    url: "https://dev.sheridanimm.com",
+    type: "website",
+    images: [""] // i jsut dont know the path for the cover img
+  },
+  twitter: {
+    card: "summary_large_image",
+    site: "sheridanimm.com",
+    creator: "@sheridanimm",
+    title: "IMM Graduate Showcase 2025",
+    description: "IMM Graduage Showcase of Creative Interactive Digital Work",
+    images: [""] // same here
+  }
 };
 
 export default function RootLayout({

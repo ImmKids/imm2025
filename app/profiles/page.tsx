@@ -2,6 +2,7 @@
 
 import Image from 'next/image';
 import ProfileCard from '@/components/ProfileCard';
+import ProfileHead from '@/components/ProfileHead';
 import { useState, useEffect, useMemo, useCallback, Suspense } from 'react';
 import { getImmProfiles } from '@/lib/api';
 import { ImmProfile } from '@/lib/types';
@@ -58,6 +59,7 @@ function ProfileContent() {
 
   return (
     <div className="relative min-h-screen w-full">
+      <ProfileHead />
       {/* Doodle Background */}
       <DoodleBackground profiles={profiles} currentProfileId={currentProfile.id} />
 
