@@ -94,7 +94,7 @@ export default function DoodleBackground({ profiles, currentProfileId }: DoodleB
             src={doodle}
             alt="Doodle"
             fill
-            className="object-cover rounded-lg opacity-30 hover:opacity-60 transition-all duration-300 hover:scale-110" // Increased hover scale
+            className="object-contain rounded-lg opacity-30 hover:opacity-60 transition-all duration-300 hover:scale-110" // Changed from object-cover to object-contain
           />
         </motion.div>
       ))}
