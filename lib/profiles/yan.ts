@@ -12,13 +12,25 @@ export const yanProfile: ImmProfile = {
   githubUrl: "",
   portfolioUrl: "",
   doodles: [
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ivy/ivyyan1.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ivy/ivyyan1hover.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ivy/ivyyan2.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ivy/ivyyan3.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ivy/ivyyan4.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ivy/ivyyan4hover.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ivy/ivyyan5.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ivy/old.png"
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ivy/ivyyan1.png",
+      hover: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ivy/ivyyan1hover.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ivy/ivyyan2.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ivy/ivyyan3.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ivy/ivyyan4.png",
+      hover: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ivy/ivyyan4hover.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ivy/ivyyan5.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ivy/old.png"
+    }
   ]
 }; 

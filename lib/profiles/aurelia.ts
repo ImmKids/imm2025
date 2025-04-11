@@ -12,7 +12,11 @@ export const aureliaProfile: ImmProfile = {
   githubUrl: "",
   portfolioUrl: "https://aureliayi.me",
   doodles: [
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/aurelia/aurelia1.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/aurelia/aurelia2.png"
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/aurelia/aurelia1.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/aurelia/aurelia2.png"
+    }
   ]
 }; 

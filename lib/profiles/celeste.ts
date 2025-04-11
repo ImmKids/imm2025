@@ -12,9 +12,17 @@ export const celesteProfile: ImmProfile = {
   githubUrl: "https://github.com/CELESTEYAN0617",
   portfolioUrl: "",
   doodles: [
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/celeste/celeste1.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/celeste/celeste2.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/celeste/celeste3.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/celeste/old.png"
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/celeste/celeste1.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/celeste/celeste2.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/celeste/celeste3.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/celeste/old.png"
+    }
   ]
 }; 

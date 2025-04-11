@@ -12,9 +12,13 @@ export const meggieProfile: ImmProfile = {
   githubUrl: "",
   portfolioUrl: "",
   doodles: [
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/meggie/meggie1.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/meggie/meggie1hover.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/meggie/meggie2.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/meggie/meggie2hover.png"
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/meggie/meggie1.png",
+      hover: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/meggie/meggie1hover.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/meggie/meggie2.png",
+      hover: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/meggie/meggie2hover.png"
+    }
   ]
 }; 
