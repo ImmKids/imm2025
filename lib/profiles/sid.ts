@@ -13,11 +13,21 @@ export const sidProfile: ImmProfile = {
   githubUrl: "",
   portfolioUrl: "",
   doodles: [
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/sid/sid1.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/sid/sid1hover.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/sid/sid2.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/sid/sid3.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/sid/sid4.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/sid/sid5.png"
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/sid/sid1.png",
+      hover: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/sid/sid1hover.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/sid/sid2.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/sid/sid3.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/sid/sid4.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/sid/sid5.png"
+    }
   ]
 }; 

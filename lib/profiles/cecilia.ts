@@ -13,6 +13,8 @@ export const ceciliaProfile: ImmProfile = {
   githubUrl: "",
   portfolioUrl: "",
   doodles: [
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/cecilia/cecilia.png"
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/cecilia/cecilia.png"
+    }
   ]
 }; 

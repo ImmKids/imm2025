@@ -1,5 +1,5 @@
 import { ImmProfile } from '../types';
-import {  PLACEHOLDER_WORK } from '../constants';
+import { PLACEHOLDER_WORK } from '../constants';
 
 export const ianProfile: ImmProfile = {
   id: 6,
@@ -13,8 +13,14 @@ export const ianProfile: ImmProfile = {
   githubUrl: "",
   portfolioUrl: "",
   doodles: [
-    "https://picsum.photos/400/300",
-    "https://picsum.photos/400/300",
-    "https://picsum.photos/400/300"
+    {
+      base: "https://picsum.photos/400/300"
+    },
+    {
+      base: "https://picsum.photos/400/300"
+    },
+    {
+      base: "https://picsum.photos/400/300"
+    }
   ]
 }; 

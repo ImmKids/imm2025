@@ -13,13 +13,29 @@ export const shivProfile: ImmProfile = {
   githubUrl: "https://github.com/shivtherumbler",
   portfolioUrl: "https://shivanshmahendru.myportfolio.com/",
   doodles: [
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/shiv/old.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/shiv/old2.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/shiv/shiv1.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/shiv/shiv2.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/shiv/shiv3.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/shiv/shiv4.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/shiv/shiv5.png",
-    "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/shiv/shiv6.png"
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/shiv/old.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/shiv/old2.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/shiv/shiv1.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/shiv/shiv2.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/shiv/shiv3.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/shiv/shiv4.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/shiv/shiv5.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/shiv/shiv6.png"
+    }
   ]
 }; 
