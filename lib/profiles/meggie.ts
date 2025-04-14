@@ -10,7 +10,7 @@ export const meggieProfile: ImmProfile = {
   linkedinUrl: "https://www.linkedin.com/in/meggie-wu/",
   instagramUrl: "",
   githubUrl: "",
-  portfolioUrl: "",
+  portfolioUrl: "https://meggiesdesk.netlify.app/",
   doodles: [
     {
       base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/meggie/meggie1.png",
