@@ -10,7 +10,7 @@ export const chenProfile: ImmProfile = {
   linkedinUrl: "https://www.linkedin.com/in/zccchen/",
   instagramUrl: "",
   githubUrl: "",
-  portfolioUrl: "",
+  portfolioUrl: "https://chenchenportfolio25-b4733af7ff64.herokuapp.com/",
   doodles: [
     {
       base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/chen/chen.png",
