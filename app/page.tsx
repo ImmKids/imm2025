@@ -3,12 +3,68 @@
 import { getImmProfiles } from '@/lib/api';
 import Playlist from '../components/Playlist';
 import Image from 'next/image';
+import { useState } from 'react';
 
 export default function Home() {
   const profiles = getImmProfiles();
+  const [hovered, setHovered] = useState(false);
 
   return (
-    <div className="flex min-h-screen bg-[#E4F5FF]">
+    <div className="flex min-h-screen bg-[#E4F5FF] relative">
+      {/* Light String Layer */}
+      <div className="absolute top-0 left-0 w-full z-[50]">
+  {/* Rope (scaled) */}
+  <div className="w-full h-[50vh] relative group transform scale-x-[1] scale-y-[0.3] origin-top transition-transform duration-300 ease-in-out">
+    <Image
+      src="/string.png"
+      alt="String"
+      fill
+      className="object-cover pointer-events-none"
+    />
+  </div>
+
+  {/* Light (outside the scaled container) */}
+  <div
+    className="absolute top-[1%] left-[21.9%] w-[12vw] h-[20vh] transition-transform duration-300 ease-in-out"
+    onMouseEnter={() => setHovered(true)}
+    onMouseLeave={() => setHovered(false)}
+    style={{ transform: 'translateX(-50%)' }} // centers the light horizontally
+  >
+    <Image
+      src={hovered ? '/lightblink.png' : '/lightdark.png'}
+      alt="Light"
+      fill
+      className="object-contain"
+    />
+  </div>
+  <div
+    className="absolute top-[21%] left-[50%] w-[12vw] h-[20vh] transition-transform duration-300 ease-in-out"
+    onMouseEnter={() => setHovered(true)}
+    onMouseLeave={() => setHovered(false)}
+    style={{ transform: 'translateX(-50%)' }} // centers the light horizontally
+  >
+    <Image
+      src={hovered ? '/lightblink.png' : '/lightdark.png'}
+      alt="Light"
+      fill
+      className="object-contain"
+    />
+  </div>
+  <div
+    className="absolute top-[19%] left-[80%] w-[12vw] h-[20vh] transition-transform duration-300 ease-in-out"
+    onMouseEnter={() => setHovered(true)}
+    onMouseLeave={() => setHovered(false)}
+    style={{ transform: 'translateX(-50%)' }} // centers the light horizontally
+  >
+    <Image
+      src={hovered ? '/lightblink.png' : '/lightdark.png'}
+      alt="Light"
+      fill
+      className="object-contain"
+    />
+  </div>
+</div>
+
       {/* Left Column */}
       <div className="flex-1"></div>
 
