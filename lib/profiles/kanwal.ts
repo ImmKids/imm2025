@@ -13,34 +13,34 @@ export const kanwalProfile: ImmProfile = {
   portfolioUrl: "https://uxfol.io/0194019a",
   doodles: [
     {
-      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/kanwal1.png"
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/kanwal1.png",
+      hover: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/kanwal1-hover.png"
     },
     {
-      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/kanwal2.png"
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/kanwal2.png",
+      hover: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/kanwal2-hover.png"
     },
     {
-      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/kanwal3.png"
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/kanwal3.png",
+      hover: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/kanwal3-hover.png"
     },
     {
-      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/kanwal4.png"
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/kanwal4.png",
+      hover: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/kanwal4-hover.png"
     },
     {
       base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/kanwal5.png"
     },
     {
-      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/kanwal6.png"
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/kanwal6.png",
+      hover: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/kanwal6-hover.png"
     },
     {
-      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/kanwal7.png"
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/kanwal7.png",
+      hover: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/kanwal7-hover.png"
     },
     {
       base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/kanwal8.png"
-    },
-    {
-      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/old.png"
-    },
-    {
-      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/kanwal/old2.png"
     }
   ]
 }; 
