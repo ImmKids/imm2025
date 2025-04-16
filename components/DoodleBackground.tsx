@@ -127,7 +127,7 @@ export default function DoodleBackground({ profiles, currentProfileId }: DoodleB
                   src={doodle.hover}
                   alt="Doodle Hover"
                   fill
-                  className={`object-contain rounded-lg transition-all duration-300 transform-gpu will-change-transform origin-center ${isHovered ? 'opacity-100 scale-110' : 'opacity-0'}`}
+                  className={`object-contain rounded-lg transition-all duration-300 transform-gpu will-change-transform origin-center ${isHovered ? 'opacity-100' : 'opacity-0'}`}
                 />
               ) : (
                 <Image
