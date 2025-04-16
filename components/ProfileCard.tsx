@@ -41,17 +41,29 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
         animate={{ scale: 1 }}
         className="relative w-full aspect-square mb-4"
       >
-        <Image
-          src={topImage}
-          alt="Top image"
-          fill
-          className="object-cover rounded-lg"
-          priority
-          onError={(e) => {
-            const target = e.target as HTMLImageElement;
-            target.src = "";
-          }}
-        />
+        {topImage.endsWith('.mp4') ? (
+          <video
+            src={topImage}
+            className="w-full h-full object-cover rounded-lg"
+            autoPlay
+            loop
+            muted
+            playsInline
+            controls={false}
+          />
+        ) : (
+          <Image
+            src={topImage}
+            alt="Top image"
+            fill
+            className="object-cover rounded-lg"
+            priority
+            onError={(e) => {
+              const target = e.target as HTMLImageElement;
+              target.src = "";
+            }}
+          />
+        )}
       </motion.div>
 
       {/* Second row - Profile section */}

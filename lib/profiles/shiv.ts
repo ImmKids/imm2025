@@ -7,7 +7,7 @@ export const shivProfile: ImmProfile = {
   title: "Game Developer",
   description: "I'm a computer science and game design student passionate about AI combat programming, cinematic sequences, and full-stack development. I aim to create seamless digital experiences and release a game loved worldwide.",
   profileImage: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/webp_512/shiv-1_512.webp",
-  topImage: PLACEHOLDER_WORK,
+  topImage: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/main/shiv.png",
   linkedinUrl: "https://www.linkedin.com/in/shivansh-mahendru/",
   instagramUrl: "https://www.instagram.com/manmadegames/",
   githubUrl: "https://github.com/shivtherumbler",

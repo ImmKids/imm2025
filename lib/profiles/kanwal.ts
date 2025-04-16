@@ -7,7 +7,7 @@ export const kanwalProfile: ImmProfile = {
   title: "Product Designer/Product Manager/UX Designer",
   description: "With 7+ years in Product Management, I craft intuitive, user-centered solutions that are both visually stunning and functionally seamless. My passion for visual storytelling drives me to transform complex challenges into engaging digital experiences.",
   profileImage: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/webp_512/kanwal-1_512.webp",
-  topImage: PLACEHOLDER_WORK,
+  topImage: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/main/kanwal.gif",
   linkedinUrl: "https://www.linkedin.com/in/kanwal-tariq",
   instagramUrl: "",
   githubUrl: "",
