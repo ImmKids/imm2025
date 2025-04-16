@@ -56,7 +56,7 @@ export default function PlaylistItem({ profile }: PlaylistItemProps) {
         />
       </div>
       <div className="flex-1 min-w-0">
-        <div className="text-xl font-medium text-gray-900 group-hover:text-blue-600 truncate">{profile.name}</div>
+        <div className="text-xl font-semibold text-gray-900 group-hover:text-blue-600 truncate">{profile.name}</div>
         <div className="text-base text-gray-600 group-hover:text-gray-900 truncate">{profile.title}</div>
       </div>
       <div className="flex items-center gap-3">
