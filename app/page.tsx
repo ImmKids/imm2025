@@ -82,8 +82,8 @@ export default function Home() {
 
         {/* Title */}
         <div className="text-center">
-          <div className="text-5xl font-bold text-[#414759] text-left">Interactive Media Management</div>
-          <div className="text-5xl font-bold text-[#414759] mt-2 text-left">2025</div>
+          <div className="text-4xl font-bold text-[#414759] flex justify-between">Interactive Media Management 2025</div>
+        
         </div>
 
         {/* Playlist Component */}

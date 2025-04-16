@@ -6,7 +6,7 @@
   --background: #E4F5FF;
   --foreground: #ededed;
   --header-height: 5rem; /* 96px */
-  --card-width: 700px;    /* new variable */
+  --card-width: 800px;
 }
 
 body {
@@ -35,4 +35,30 @@ body {
   75% {
     transform: translate(10px, -15px);
   }
+}
+
+/* Custom Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #E4F5FF;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #AEC9FF;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #9DB8FF;
+}
+
+/* Firefox scrollbar styling */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #AEC9FF #E4F5FF;
 }

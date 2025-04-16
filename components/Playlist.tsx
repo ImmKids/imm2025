@@ -55,7 +55,7 @@ export default function Playlist({ profiles: initialProfiles }: PlaylistProps) {
       </div>
 
       {/* Playlist Items */}
-      <div className="max-h-[500px] overflow-y-auto">
+      <div className="max-h-[500px] overflow-y-auto  border-4 border-[#AEC9FF] p-4">
         {profiles.map((profile) => (
           <PlaylistItem 
             key={profile.id} 

@@ -25,32 +25,47 @@ export default function DoodleBackground({ profiles, currentProfileId }: DoodleB
     const leftCount = Math.ceil(count / 2);
     const rightCount = count - leftCount;
 
+    // Calculate center third boundaries with larger margins
+    const centerStart = window.innerWidth / 3;
+    const centerEnd = (window.innerWidth / 3) * 2;
+    const margin = 200; // Increased margin from center
+
     // Generate positions for left side
     for (let i = 0; i < leftCount; i++) {
-      const section = Math.floor(i / (leftCount / 3)); // Divide left side into 3 sections
-      const x = (section * window.innerWidth * 0.1) + (Math.random() * window.innerWidth * 0.1); // Left 60% of the screen
-      const y = (i % 3) * (window.innerHeight / 3) + Math.random() * (window.innerHeight / 3); // Distribute vertically
+      const section = Math.floor(i / (leftCount / 3));
+      // Ensure x position stays in the left third with margin
+      const maxX = centerStart - margin;
+      const x = Math.min(
+        (section * window.innerWidth * 0.1) + (Math.random() * window.innerWidth * 0.1),
+        maxX
+      );
+      const y = (i % 3) * (window.innerHeight / 3) + Math.random() * (window.innerHeight / 3);
       
       positions.push({
         x,
         y,
         rotation: -15 + Math.random() * 30,
-        scale: 1.2 + Math.random() * 0.6, // Increased scale range: 1.2 to 1.8
+        scale: 0.8 + Math.random() * 0.4, // Reduced scale range: 0.8 to 1.2
         side: 'left' as const
       });
     }
 
     // Generate positions for right side
     for (let i = 0; i < rightCount; i++) {
-      const section = Math.floor(i / (rightCount / 3)); // Divide right side into 3 sections
-      const x = window.innerWidth * 0.7 + (section * window.innerWidth * 0.1) + (Math.random() * window.innerWidth * 0.1); // Right 30% of the screen
-      const y = (i % 3) * (window.innerHeight / 3) + Math.random() * (window.innerHeight / 3); // Distribute vertically
+      const section = Math.floor(i / (rightCount / 3));
+      // Ensure x position starts from the right third with margin
+      const minX = centerEnd + margin;
+      const x = Math.max(
+        window.innerWidth * 0.7 + (section * window.innerWidth * 0.1) + (Math.random() * window.innerWidth * 0.1),
+        minX
+      );
+      const y = (i % 3) * (window.innerHeight / 3) + Math.random() * (window.innerHeight / 3);
       
       positions.push({
         x,
         y,
         rotation: -15 + Math.random() * 30,
-        scale: 1.2 + Math.random() * 0.6, // Increased scale range: 1.2 to 1.8
+        scale: 0.8 + Math.random() * 0.4, // Reduced scale range: 0.8 to 1.2
         side: 'right' as const
       });
     }
