@@ -10,7 +10,7 @@ export const sidProfile: ImmProfile = {
   linkedinUrl: "https://www.linkedin.com/in/siddharth-satish-kumar/",
   instagramUrl: "https://instagram.com/lettersnumbersandafullstop",
   githubUrl: "",
-  portfolioUrl: "",
+  portfolioUrl: "https://portfolio-frontend-bp3r.onrender.com/#home",
   doodles: [
     {
       base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/sid/sid1.png",
