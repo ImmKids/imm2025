@@ -8,8 +8,8 @@ export const kanwalProfile: ImmProfile = {
   profileImage: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/webp_512/kanwal-1_512.webp",
   topImage: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/main/kanwal.mp4",
   linkedinUrl: "https://www.linkedin.com/in/kanwal-tariq",
-  instagramUrl: "",
-  githubUrl: "",
+  instagramUrl: "https://uxfol.io/0194019a",
+  githubUrl: "https://uxfol.io/0194019a",
   portfolioUrl: "https://uxfol.io/0194019a",
   doodles: [
     {
