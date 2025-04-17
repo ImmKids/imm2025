@@ -73,7 +73,7 @@ const ProfileCard: React.FC<ProfileCardProps> = ({
         transition={{ delay: 0.2 }}
         className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 lg:gap-4 mb-2 sm:mb-3 lg:mb-4"
       >
-        <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 relative rounded-full overflow-hidden">
+        <div className="w-10 h-10 sm:w-12 sm:h-12 lg:w-16 lg:h-16 relative rounded-lg overflow-hidden">
           <Image
             src={profileImage}
             alt="Profile"
