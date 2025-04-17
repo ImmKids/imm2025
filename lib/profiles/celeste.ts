@@ -11,5 +11,19 @@ export const celesteProfile: ImmProfile = {
   linkedinUrl: "https://www.linkedin.com/in/xi-y-celeste0617",
   instagramUrl: "https://www.instagram.com/celeste_tattooer/",
   githubUrl: "https://github.com/CELESTEYAN0617",
-  portfolioUrl: "https://www.ce1este.day"
+  portfolioUrl: "https://www.ce1este.day",
+  doodles: [
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/celeste/celeste1.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/celeste/celeste2.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/celeste/celeste3.png"
+    },
+    {
+      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/celeste/old.png"
+    }
+  ]
 }; 
