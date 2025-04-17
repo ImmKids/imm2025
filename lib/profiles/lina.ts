@@ -7,7 +7,7 @@ export const linaProfile: ImmProfile = {
   title: "UX/Product Engineer",
   description: "etc etc etc placeholder blah blah will fix soon",
   profileImage: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/webp_512/lina-1_512.webp",
-  topImage: PLACEHOLDER_WORK,
+  topImage: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/main/lina.gif",
   linkedinUrl: "https://linkedin.com/in/lina-lee0718",
   instagramUrl: "https://instagram.com/lina",
   githubUrl: "https://github.com/linadyl",
