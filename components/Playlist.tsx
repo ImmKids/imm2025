@@ -44,8 +44,18 @@ export default function Playlist({ profiles: initialProfiles }: PlaylistProps) {
         </div>
       </div>
 
+      <div className="mb-6 text-gray-700 space-y-4">
+        <p>
+          Interactive Media Management is a program where technology, design, and storytelling intersect. We learned to manage and develop mobile and web applications from end to end - from design/interactivity and user experience research, to full stack development, to pitching and content strategy.
+        </p>
+        {/* <p>
+          This Graduation Show is a celebration of 15 unique individuals—each from different fields of
+          study. Coming from diverse academic and professional backgrounds, we have broken past assumptions, adapted to new ways of thinking, and redefined our creative identities.
+        </p> */}
+      </div>
+
       {/* Playlist Items */}
-      <div className="max-h-[500px] overflow-y-auto">
+      <div className="max-h-[500px] overflow-y-auto  border-4 border-[#AEC9FF] p-4">
         {profiles.map((profile) => (
           <PlaylistItem 
             key={profile.id} 

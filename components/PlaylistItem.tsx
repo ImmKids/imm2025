@@ -1,7 +1,7 @@
 import { ImmProfile } from '@/lib/types';
 import Image from 'next/image';
 import { useRouter } from 'next/navigation';
-import { MoreVertical, Instagram, Linkedin, Github } from 'lucide-react';
+import { MoreVertical, Instagram, Linkedin, Github, Play } from 'lucide-react';
 import { useState, useEffect, useRef } from 'react';
 
 interface PlaylistItemProps {
@@ -36,29 +36,41 @@ export default function PlaylistItem({ profile }: PlaylistItemProps) {
     setShowMenu(!showMenu);
   };
 
+  const handlePlayClick = (e: React.MouseEvent) => {
+    e.stopPropagation();
+    router.push(`/profiles?id=${profile.id}`);
+  };
+
   return (
     <div 
       ref={itemRef}
       onClick={handleClick}
       onMouseLeave={() => setShowMenu(false)}
-      className="flex items-center gap-4 p-6 cursor-pointer border-b border-black hover:bg-blue-500 hover:text-white relative">
-      <div className="w-16 h-16 relative">
+      className="flex items-center gap-6 p-4 cursor-pointer border-b border-gray-200 hover:bg-gray-50 relative">
+      <div className="w-24 h-24 relative flex-shrink-0">
         <Image
           src={profile.profileImage}
           alt={profile.name}
           fill
-          className="rounded-full object-cover"
+          className="rounded-lg object-cover"
         />
       </div>
-      <div className="flex-1">
-        <div className="text-sm text-gray-600 group-hover:text-white">{profile.title}</div>
-        <div className="text-sm text-gray-600 group-hover:text-white">{profile.name}</div>
+      <div className="flex-1 min-w-0">
+        <div className="text-xl font-semibold text-gray-900 group-hover:text-blue-600 truncate">{profile.name}</div>
+        <div className="text-base text-gray-600 group-hover:text-gray-900 truncate">{profile.title}</div>
       </div>
-      <button 
-        onClick={handleMenuClick}
-        className="p-2 hover:bg-blue-600 rounded-full">
-        <MoreVertical className="w-5 h-5" />
-      </button>
+      <div className="flex items-center gap-3">
+        <button 
+          onClick={handlePlayClick}
+          className="p-2 hover:bg-gray-200 rounded-full transition-colors">
+          <Play className="w-6 h-6 text-gray-600" />
+        </button>
+        <button 
+          onClick={handleMenuClick}
+          className="p-2 hover:bg-gray-200 rounded-full transition-colors">
+          <MoreVertical className="w-6 h-6 text-gray-600" />
+        </button>
+      </div>
 
       {/* Menu Popup */}
       {showMenu && (
