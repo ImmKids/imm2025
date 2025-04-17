@@ -1,5 +1,4 @@
 import { ImmProfile } from '../types';
-import { PLACEHOLDER_WORK } from '../constants';
 
 export const mintProfile: ImmProfile = {
   id: 10,
@@ -7,7 +6,7 @@ export const mintProfile: ImmProfile = {
   title: "Interactive Visual Designer",
   description: "I studied Environmental Science in my undergraduate studies and am currently studying Interaction Design. I am committed to combining design and technology to create innovative solutions centered on user experience.",
   profileImage: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/webp_512/mint-1_512.webp",
-  topImage: PLACEHOLDER_WORK,
+  topImage: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/main/mint.webp",
   linkedinUrl: "https://www.linkedin.com/in/mint-zhong",
   instagramUrl: "",
   githubUrl: "",
