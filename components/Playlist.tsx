@@ -1,7 +1,7 @@
 import { ImmProfile } from '@/lib/types';
 import { Shuffle, Play } from 'lucide-react';
 import PlaylistItem from './PlaylistItem';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { useRouter } from 'next/navigation';
 
 interface PlaylistProps {
@@ -11,6 +11,12 @@ interface PlaylistProps {
 export default function Playlist({ profiles: initialProfiles }: PlaylistProps) {
   const [profiles, setProfiles] = useState(initialProfiles);
   const router = useRouter();
+
+  useEffect(() => {
+    // Shuffle profiles on component mount
+    const shuffled = [...initialProfiles].sort(() => Math.random() - 0.5);
+    setProfiles(shuffled);
+  }, [initialProfiles]);
 
   const handleShuffle = () => {
     const shuffled = [...profiles].sort(() => Math.random() - 0.5);
