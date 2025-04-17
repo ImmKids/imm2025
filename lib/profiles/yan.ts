@@ -10,7 +10,7 @@ export const yanProfile: ImmProfile = {
   linkedinUrl: "https://www.linkedin.com/in/yan-huo-6f",
   instagramUrl: "https://instagram.com/hyan.h7",
   githubUrl: "",
-  portfolioUrl: "",
+  portfolioUrl: "https://theyanhuo.xyz/",
   doodles: [
     {
       base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/ivy/ivyyan1.png",
