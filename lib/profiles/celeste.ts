@@ -20,9 +20,6 @@ export const celesteProfile: ImmProfile = {
     },
     {
       base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/celeste/celeste3.png"
-    },
-    {
-      base: "https://okrhpsnj9c0wuxyd.public.blob.vercel-storage.com/doodles/celeste/old.png"
     }
   ]
 }; 
