@@ -28,7 +28,7 @@ export default function DoodleBackground({ profiles, currentProfileId }: DoodleB
     // Calculate center third boundaries with larger margins
     const centerStart = window.innerWidth / 3;
     const centerEnd = (window.innerWidth / 3) * 2;
-    const margin = 200; // Increased margin from center
+    const margin = window.innerWidth < 640 ? 100 : 200; // Smaller margin on mobile
 
     // Generate positions for left side
     for (let i = 0; i < leftCount; i++) {
@@ -45,7 +45,7 @@ export default function DoodleBackground({ profiles, currentProfileId }: DoodleB
         x,
         y,
         rotation: -15 + Math.random() * 30,
-        scale: 0.8 + Math.random() * 0.4, // Reduced scale range: 0.8 to 1.2
+        scale: window.innerWidth < 640 ? 0.6 + Math.random() * 0.3 : 0.8 + Math.random() * 0.4, // Smaller scale on mobile
         side: 'left' as const
       });
     }
@@ -65,7 +65,7 @@ export default function DoodleBackground({ profiles, currentProfileId }: DoodleB
         x,
         y,
         rotation: -15 + Math.random() * 30,
-        scale: 0.8 + Math.random() * 0.4, // Reduced scale range: 0.8 to 1.2
+        scale: window.innerWidth < 640 ? 0.6 + Math.random() * 0.3 : 0.8 + Math.random() * 0.4, // Smaller scale on mobile
         side: 'right' as const
       });
     }
@@ -105,7 +105,7 @@ export default function DoodleBackground({ profiles, currentProfileId }: DoodleB
               delay: index * 0.05,
               ease: "easeOut"
             }}
-            className="absolute w-[400px] h-[300px] group cursor-pointer"
+            className="absolute w-[200px] sm:w-[400px] h-[150px] sm:h-[300px] group cursor-pointer"
             style={{
               transform: `translate(${doodlePositions[index]?.x || 0}px, ${doodlePositions[index]?.y || 0}px) rotate(${doodlePositions[index]?.rotation || 0}deg)`
             }}
