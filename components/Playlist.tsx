@@ -53,9 +53,8 @@ export default function Playlist({ profiles: initialProfiles }: PlaylistProps) {
           study. Coming from diverse academic and professional backgrounds, we have broken past assumptions, adapted to new ways of thinking, and redefined our creative identities.
         </p> */}
       </div>
-
       {/* Playlist Items */}
-      <div className="max-h-[500px] overflow-y-auto  border-4 border-[#AEC9FF] p-4">
+      <div className="max-h-[500px] overflow-y-auto border-4 border-[#AEC9FF] rounded-lg p-4 bg-white/40">
         {profiles.map((profile) => (
           <PlaylistItem 
             key={profile.id} 
