@@ -146,14 +146,26 @@ function ProfileContent() {
                   <p className="text-lg sm:text-xl text-gray-600">{currentProfile.title}</p>
                 </div>
               </div>
-              <div className="mb-6">
-                <Image
-                  src={currentProfile.topImage}
-                  alt="Work sample"
-                  width={800}
-                  height={400}
-                  className="rounded-lg w-full object-cover"
-                />
+              <div className="mb-6 overflow-hidden rounded-lg" style={{ height: '300px' }}>
+                {currentProfile.topImage.endsWith('.mp4') ? (
+                  <video
+                    src={currentProfile.topImage}
+                    className="w-full h-[120%] object-cover object-center"
+                    style={{ marginTop: '-10%' }}
+                    autoPlay
+                    loop
+                    muted
+                    playsInline
+                  />
+                ) : (
+                  <Image
+                    src={currentProfile.topImage}
+                    alt="Work sample"
+                    width={800}
+                    height={400}
+                    className="rounded-lg w-full object-cover"
+                  />
+                )}
               </div>
               <p className="text-gray-700 whitespace-pre-line text-sm sm:text-base">{currentProfile.description}</p>
             </motion.div>
